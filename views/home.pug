@@ -1,0 +1,49 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style
+    style
+        include ../static/style.css 
+
+block content
+    section#introsection
+        div ALLAHABAD DANCE ACADEMY
+        div.small DANCE EAT SLEEP REPEAT
+
+    section#missionsection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.cardbox
+                div.card-img
+                    img(src="/static/dancer1.png")
+
+                div.cardcontent
+                    p This is the best dance Academy of Allahabad Each and Every step is Taught by professionals
+        div.card
+            h3 Dance The Way You Like
+            div.cardbox
+                div.card-img
+                    img(src="/static/dancer2.png")
+
+                div.cardcontent
+                    p All the dance forms training is avaliaable from free style to contemporary
+        div.card
+            h3 Experting Teaching
+            div.cardbox
+                div.card-img
+                    img(src="/static/dancer3.png")
+
+                div.cardcontent
+                    p Monthly Visits froms experts all the the World Daily live lectures from different style experts
+            
+
+    section#sponsorsection
+        h2 Our Sponsors
+        div#sponser 
+            img(src="/static/apple.jpg", alt="Sponser's Image" Class="spimage")
+            img(src="/static/microsoft.jpg", alt="Sponser's Image" Class="spimage")
+            img(src="/static/hp.jpg", alt="Sponser's Image" Class="spimage")
+            img(src="/static/skype.jpg", alt="Sponser's Image" Class="spimage")
